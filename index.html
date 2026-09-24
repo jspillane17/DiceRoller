@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="container">
+        <h1>Welcome to Dice Roller!</h1>
+
+        <section aria-labelledby="dice-controls-heading">
+            <h2 id="dice-controls-heading">Roll the dice</h2>
+            <label for="numDiceInput">Number of Dice:</label>
+            <input id="numDiceInput" type="number" placeholder="0-99999" min="1" max="99999">
+            <button type="button" onclick="roll()">ROLL</button>
+        </section>
+
+        <section aria-labelledby="dice-results-heading" aria-live="polite">
+            <h2 id="dice-results-heading">Results</h2>
+            <div id="diceImages"></div>
+        </section>
+    </main>
+    <footer>
+        <small>
+            Icons made by <a href="https://www.flaticon.com/authors/iconsnova">IconsNova</a>
+            from <a href="https://www.flaticon.com/">Flaticon</a>
+        </small>
+        <br>
+        <small>Made by Jude Spillane</small>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+:root {
+    --background-color: aliceblue;
+    --border-color: navy;
+    --button-color: hsl(180, 100%, 30%);
+    --button-hover-color: hsl(180, 100%, 40%);
+    --button-active-color: hsl(180, 100%, 45%);
+}
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Dice roller */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--background-color);
+    border: 5px solid var(--border-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+#container label {
+    font-weight: bold;
+}
+
+#container input {
+    width: 180px;
+    background-color: var(--background-color);
+    border: none;
+    border-bottom: 5px solid var(--border-color);
+    color: var(--border-color);
+    font-size: 2.5rem;
+}
+
+#container button {
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--background-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#container button:hover {
+    background-color: var(--button-hover-color);
+}
+
+#container button:active {
+    background-color: var(--button-active-color);
+}
